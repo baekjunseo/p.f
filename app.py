@@ -14,6 +14,10 @@ GITHUB_URL = "https://github.com/your-username"
 LINKEDIN_URL = "https://linkedin.com/in/your-profile"
 RESUME_URL = ""
 
+SKILLS = [
+    "Python", "SQL", "Pandas / NumPy", "Scikit-learn",
+    "PyTorch / TensorFlow", "Streamlit", "Git / GitHub", "Docker",
+]
 
 CERTIFICATIONS = [
     {
@@ -28,7 +32,7 @@ CERTIFICATIONS = [
     },
     {
         "name": "DSAC-M1",
-        "issuer": "한국생산성본부KPC",
+        "issuer": "",
         "date": "",
     },
 ]
@@ -167,7 +171,7 @@ elif page == "자격증":
 # ---------------------------------------------------------------------------
 # PAGE: 연락처
 # ---------------------------------------------------------------------------
-elif page == "연락처":
+elif page == "010-9456-7883":
     st.title("연락처")
     st.write("편하게 연락 주세요!")
 
