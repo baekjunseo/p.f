@@ -8,13 +8,13 @@ import streamlit as st
 # ---------------------------------------------------------------------------
 # CONFIG — edit everything in this section with your own information
 # ---------------------------------------------------------------------------
-NAME = "홍길동"
+NAME = "백준서"
 TITLE = "Data Scientist / ML Engineer"
 BIO = (
     "데이터로 문제를 해결하는 것을 좋아하는 개발자입니다. "
     "머신러닝, 데이터 시각화, 웹 애플리케이션 개발에 관심이 많습니다."
 )
-EMAIL = "your.email@example.com"
+EMAIL = "youg74@naver.com"
 GITHUB_URL = "https://github.com/your-username"
 LINKEDIN_URL = "https://linkedin.com/in/your-profile"
 RESUME_URL = ""  # Optional: link to a PDF resume hosted somewhere (e.g. GitHub raw link)
@@ -23,19 +23,38 @@ SKILLS = [
     "Python", "SQL", "Pandas / NumPy", "Scikit-learn",
     "PyTorch / TensorFlow", "Streamlit", "Git / GitHub", "Docker",
 ]
+CERTIFICATIONS = [
+    {
+        "name": "Microsoft Azure Fundamentals (AZ-900)",
+        "issuer": "Microsoft",
+        "date": "",  # 취득일 입력
+    },
+    {
+        "name": "빅데이터분석실무 2급",
+        "issuer": "한국데이터산업진흥원",
+        "date": "",  # 취득일 입력
+    },
+    {
+        "name": "DSAC-M1",
+        "issuer": "",  # 발급기관 입력
+        "date": "",  # 취득일 입력
+    },
+]
 
 PROJECTS = [
     {
-        "title": "손글씨 숫자 인식기",
+        "title": "초미세먼지 예측 및 위험도 안내 시스템",
         "description": (
-            "scikit-learn MLP 신경망을 8x8 손글씨 숫자 데이터셋으로 학습시키고, "
-            "학습된 가중치를 JavaScript로 그대로 옮겨 브라우저에서 바로 동작하는 "
-            "인터랙티브 인식기를 만들었습니다. 테스트 정확도 98.06%."
+            "에어코리아·기상청 공공데이터(전국 17개 시도, 3년치)를 수집·전처리하여 "
+            "XGBoost 머신러닝 모델로 내일 PM2.5 농도를 예측하는 AI 시스템입니다. "
+            "위험 등급 자동 분류, 행동 가이드"
+            "Streamlit Cloud를 통해 모바일 웹으로 배포하였습니다."
         ),
-        "tags": ["scikit-learn", "Neural Network", "JavaScript"],
-        "link": "",  # Paste your published artifact / demo URL here
-        "github": "",  # Paste your project repo URL here
+        "tags": ["Python", "XGBoost", "Streamlit", "Pandas", "공공데이터"],
+        "link": "",  # Streamlit Cloud 배포 URL
+        "github": "",  # GitHub 레포지토리 URL
     },
+]
     {
         "title": "프로젝트 이름을 입력하세요",
         "description": "프로젝트에 대한 간단한 설명을 2~3문장으로 작성하세요.",
