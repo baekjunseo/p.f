@@ -9,7 +9,6 @@ BIO = (
     "데이터로 문제를 해결하는 것을 좋아하는 개발자입니다. "
     "머신러닝, 데이터 시각화, 웹 애플리케이션 개발에 관심이 많습니다."
 )
-EMAIL = "youg74@naver.com"
 GITHUB_URL = "https://github.com/your-username"
 LINKEDIN_URL = "https://linkedin.com/in/your-profile"
 RESUME_URL = ""
@@ -80,10 +79,6 @@ st.markdown(
             font-size: 0.78rem;
             margin-right: 0.4rem;
         }
-        .section-title {
-            margin-top: 2.2rem;
-            margin-bottom: 0.8rem;
-        }
     </style>
     """,
     unsafe_allow_html=True,
@@ -100,12 +95,11 @@ with st.sidebar:
     st.markdown("---")
     st.markdown(f"[GitHub]({GITHUB_URL})")
     st.markdown(f"[LinkedIn]({LINKEDIN_URL})")
-    st.markdown(f"[Email](mailto:{EMAIL})")
     if RESUME_URL:
         st.markdown(f"[이력서 (PDF)]({RESUME_URL})")
 
     st.markdown("---")
-    page = st.radio("메뉴", ["소개", "프로젝트", "자격증", "연락처"], label_visibility="collapsed")
+    page = st.radio("메뉴", ["소개", "프로젝트", "자격증"], label_visibility="collapsed")
 
 # ---------------------------------------------------------------------------
 # PAGE: 소개
@@ -121,7 +115,6 @@ if page == "소개":
         with cols[i % 4]:
             st.markdown(f"- {skill}")
 
-    # 자격증 섹션 추가
     st.markdown("### 자격증")
     for cert in CERTIFICATIONS:
         st.markdown(f"**{cert['name']}**")
@@ -167,24 +160,3 @@ elif page == "자격증":
         st.markdown(f"**{cert['name']}**")
         st.caption(f"{cert['issuer']} {('| ' + cert['date']) if cert['date'] else ''}")
         st.markdown("---")
-
-# ---------------------------------------------------------------------------
-# PAGE: 연락처
-# ---------------------------------------------------------------------------
-elif page == "010-9456-7883":
-    st.title("연락처")
-    st.write("편하게 연락 주세요!")
-
-    st.markdown(f"📧 **Email:** [{EMAIL}](mailto:{EMAIL})")
-    st.markdown(f"💻 **GitHub:** [{GITHUB_URL}]({GITHUB_URL})")
-    st.markdown(f"🔗 **LinkedIn:** [{LINKEDIN_URL}]({LINKEDIN_URL})")
-
-    st.markdown("---")
-    st.markdown("#### 메시지 남기기")
-    with st.form("contact_form"):
-        sender_name = st.text_input("이름")
-        sender_email = st.text_input("이메일")
-        message = st.text_area("메시지")
-        submitted = st.form_submit_button("보내기")
-        if submitted:
-            st.success("메시지가 기록되었습니다.")
