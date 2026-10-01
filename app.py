@@ -14,10 +14,6 @@ GITHUB_URL = "https://github.com/your-username"
 LINKEDIN_URL = "https://linkedin.com/in/your-profile"
 RESUME_URL = ""
 
-SKILLS = [
-    "Python", "SQL", "Pandas / NumPy", "Scikit-learn",
-    "PyTorch / TensorFlow", "Streamlit", "Git / GitHub", "Docker",
-]
 
 CERTIFICATIONS = [
     {
@@ -32,7 +28,7 @@ CERTIFICATIONS = [
     },
     {
         "name": "DSAC-M1",
-        "issuer": "",
+        "issuer": "한국생산성본부KPC",
         "date": "",
     },
 ]
