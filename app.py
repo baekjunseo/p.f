@@ -103,7 +103,7 @@ with st.sidebar:
 # PAGE: 소개
 # ---------------------------------------------------------------------------
 if page == "소개":
-    st.title(f"안녕하세요, {NAME}입니다 👋")
+    st.title(f"안녕하세요, {NAME}입니다 ")
     st.subheader(TITLE)
     st.write(BIO)
 
