@@ -55,7 +55,6 @@ PROJECTS = [
 # ---------------------------------------------------------------------------
 st.set_page_config(
     page_title=f"{NAME} | Portfolio",
-    page_icon="👋",
     layout="wide",
 )
 
